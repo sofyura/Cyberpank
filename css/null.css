@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.main *:focus-visible,
+header *:focus-visible,
+footer *:focus-visible {
+  outline: none;
+}
+
+.main a,
+header a,
+footer a {
+  text-decoration: none;
+}
+
+.main a,
+footer a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section ul,
+section ol,
+header ul,
+header ol,
+footer ul,
+footer ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+section select,
+section input,
+section textarea,
+section button,
+header button,
+footer button {
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  color: inherit;
+  background: none;
+}
+section select:focus-visible,
+section input:focus-visible,
+section textarea:focus-visible,
+section button:focus-visible,
+header button:focus-visible,
+footer button:focus-visible {
+  outline: none;
+}
+
+.main input::-webkit-outer-spin-button, .main input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+header button,
+footer button,
+section button {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
